@@ -3,152 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WOW - Cosas que no sabías</title>
+<meta name="description" content="WOW - Curiosidades sorprendentes de ciencia, tecnología, videojuegos y del mundo.">
+<title>WOW — Cosas que no sabías</title>
 <style>
 *{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:linear-gradient(135deg,#0b0714,#1b1030,#100b20);
-  color:white;
-}
-.container{max-width:900px;margin:auto;padding:25px 18px 45px}
-header{text-align:center;padding:25px 10px}
-h1{font-size:38px;margin:5px 0 10px}
-.subtitle{color:#d8c9ff;font-size:18px}
-.card{
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.14);
-  border-radius:22px;
-  padding:25px;
-  margin:20px 0;
-  box-shadow:0 10px 35px rgba(0,0,0,.25);
-}
-.badge{
-  display:inline-block;
-  padding:7px 12px;
-  border-radius:20px;
-  background:#7c3aed;
-  font-size:13px;
-  font-weight:bold;
-}
-.fact{font-size:24px;line-height:1.4;margin:18px 0}
-.like{
-  display:inline-block;
-  border:1px solid rgba(255,255,255,.25);
-  padding:10px 15px;
-  border-radius:14px;
-  cursor:pointer;
-  color:#fff;
-  background:rgba(255,255,255,.07);
-}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#080510,#180d2b,#0b0717);color:#fff}
+.container{max-width:950px;margin:auto;padding:18px}
+header{text-align:center;padding:30px 10px 22px}
+.logo{font-size:13px;font-weight:bold;letter-spacing:2px;color:#e9d5ff}
+h1{font-size:42px;margin:10px 0;background:linear-gradient(90deg,#fff,#e9d5ff,#f9a8d4);-webkit-background-clip:text;color:transparent}
+.subtitle{color:#cfc3df;font-size:18px;line-height:1.5}
+nav{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:15px 0 25px}
+nav a{color:#fff;text-decoration:none;background:rgba(255,255,255,.08);padding:9px 13px;border-radius:14px;font-size:13px}
+.card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:24px;margin:20px 0;box-shadow:0 12px 35px rgba(0,0,0,.25)}
+.badge{display:inline-block;padding:7px 12px;border-radius:20px;background:#7c3aed;font-size:12px;font-weight:bold}
+.fact{font-size:24px;line-height:1.45;margin:18px 0 8px}
+.small{color:#bdb1ce;font-size:14px}
 input{display:none}
-input:checked + label{background:#ec4899}
-.ad{
-  text-align:center;
-  padding:20px;
-  border:1px dashed rgba(255,255,255,.3);
-  border-radius:18px;
-  color:#cfc4e8;
-  margin:25px 0;
-}
-footer{text-align:center;color:#aaa;margin-top:35px;font-size:14px}
-
-/* Datos con botones CSS, sin JavaScript */
-.fact-box .fact-item{display:none}
-#f1:checked ~ .facts .a1,
-#f2:checked ~ .facts .a2,
-#f3:checked ~ .facts .a3,
-#f4:checked ~ .facts .a4,
-#f5:checked ~ .facts .a5,
-#f6:checked ~ .facts .a6,
-#f7:checked ~ .facts .a7,
-#f8:checked ~ .facts .a8,
-#f9:checked ~ .facts .a9,
-#f10:checked ~ .facts .a10,
-#f11:checked ~ .facts .a11,
-#f12:checked ~ .facts .a12,
-#f13:checked ~ .facts .a13,
-#f14:checked ~ .facts .a14,
-#f15:checked ~ .facts .a15{display:block}
-.selector{
-  display:flex;flex-wrap:wrap;gap:8px;margin-top:20px
-}
-.selector label{
-  padding:9px 12px;border-radius:12px;
-  background:rgba(255,255,255,.08);
-  cursor:pointer;font-size:13px
-}
+.fact-item{display:none}
+#f1:checked~.facts .a1,#f2:checked~.facts .a2,#f3:checked~.facts .a3,#f4:checked~.facts .a4,#f5:checked~.facts .a5,#f6:checked~.facts .a6,#f7:checked~.facts .a7,#f8:checked~.facts .a8,#f9:checked~.facts .a9,#f10:checked~.facts .a10,#f11:checked~.facts .a11,#f12:checked~.facts .a12,#f13:checked~.facts .a13,#f14:checked~.facts .a14,#f15:checked~.facts .a15,#f16:checked~.facts .a16,#f17:checked~.facts .a17,#f18:checked~.facts .a18,#f19:checked~.facts .a19,#f20:checked~.facts .a20,#f21:checked~.facts .a21,#f22:checked~.facts .a22,#f23:checked~.facts .a23,#f24:checked~.facts .a24,#f25:checked~.facts .a25,#f26:checked~.facts .a26,#f27:checked~.facts .a27,#f28:checked~.facts .a28,#f29:checked~.facts .a29,#f30:checked~.facts .a30{display:block}
+.selector{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.selector label{padding:9px 11px;border-radius:12px;background:rgba(255,255,255,.08);cursor:pointer;font-size:12px}
 .selector label:hover{background:rgba(255,255,255,.16)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.topic{padding:17px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
+.topic b{display:block;margin-bottom:7px}
+.like{display:inline-block;padding:11px 16px;border-radius:14px;background:rgba(255,255,255,.08);cursor:pointer}
+#like:checked+label{background:#ec4899}
+.ad{text-align:center;padding:22px;border:1px dashed rgba(255,255,255,.25);border-radius:18px;color:#a99db7;margin:25px 0}
+footer{text-align:center;color:#8e8498;padding:15px 0 30px;font-size:13px}
 </style>
 </head>
-
 <body>
 <div class="container">
 <header>
-  <div class="badge">🧠 CURIOSIDADES</div>
-  <h1>WOW — Cosas que no sabías</h1>
-  <p class="subtitle">Datos sorprendentes de ciencia, tecnología y más.</p>
+<div class="logo">🧠 CURIOSIDADES • CIENCIA • TECNOLOGÍA • GAMING</div>
+<h1>WOW — Cosas que no sabías</h1>
+<p class="subtitle">Datos sorprendentes para aprender algo nuevo en menos de un minuto.</p>
 </header>
 
-<div class="card fact-box">
-  <input type="radio" name="fact" id="f1" checked>
-  <input type="radio" name="fact" id="f2">
-  <input type="radio" name="fact" id="f3">
-  <input type="radio" name="fact" id="f4">
-  <input type="radio" name="fact" id="f5">
-  <input type="radio" name="fact" id="f6">
-  <input type="radio" name="fact" id="f7">
-  <input type="radio" name="fact" id="f8">
-  <input type="radio" name="fact" id="f9">
-  <input type="radio" name="fact" id="f10">
-  <input type="radio" name="fact" id="f11">
-  <input type="radio" name="fact" id="f12">
-  <input type="radio" name="fact" id="f13">
-  <input type="radio" name="fact" id="f14">
-  <input type="radio" name="fact" id="f15">
+<nav>
+<a href="#datos">🤯 Datos</a>
+<a href="#temas">📚 Temas</a>
+<a href="#nosotros">ℹ️ Sobre WOW</a>
+</nav>
 
-  <div class="facts">
-    <div class="fact-item a1"><span class="badge">🌎 DATO #1</span><p class="fact">La Tierra no es una esfera perfecta: está ligeramente achatada en los polos.</p></div>
-    <div class="fact-item a2"><span class="badge">🧠 DATO #2</span><p class="fact">Tu cerebro utiliza una gran cantidad de energía aunque estés descansando.</p></div>
-    <div class="fact-item a3"><span class="badge">🌌 DATO #3</span><p class="fact">En el espacio no puedes escuchar sonidos como en la Tierra porque casi no hay materia que los transporte.</p></div>
-    <div class="fact-item a4"><span class="badge">🐙 DATO #4</span><p class="fact">Los pulpos tienen tres corazones.</p></div>
-    <div class="fact-item a5"><span class="badge">⚡ DATO #5</span><p class="fact">Un rayo puede alcanzar temperaturas de decenas de miles de grados Celsius.</p></div>
-    <div class="fact-item a6"><span class="badge">🌳 DATO #6</span><p class="fact">Los árboles pueden comunicarse mediante redes de hongos que conectan sus raíces.</p></div>
-    <div class="fact-item a7"><span class="badge">🕷️ DATO #7</span><p class="fact">Las arañas producen seda con propiedades extraordinarias de resistencia.</p></div>
-    <div class="fact-item a8"><span class="badge">💡 DATO #8</span><p class="fact">La luz del Sol tarda unos 8 minutos y 20 segundos en llegar a la Tierra.</p></div>
-    <div class="fact-item a9"><span class="badge">🌙 DATO #9</span><p class="fact">La Luna se aleja de la Tierra unos centímetros cada año.</p></div>
-    <div class="fact-item a10"><span class="badge">🧊 DATO #10</span><p class="fact">El hielo es menos denso que el agua líquida, por eso flota.</p></div>
-    <div class="fact-item a11"><span class="badge">🐝 DATO #11</span><p class="fact">Las abejas pueden reconocer patrones y aprender a asociarlos con recompensas.</p></div>
-    <div class="fact-item a12"><span class="badge">🛰️ DATO #12</span><p class="fact">Los satélites necesitan corregir constantemente su posición para mantenerse en órbita.</p></div>
-    <div class="fact-item a13"><span class="badge">🎮 DATO #13</span><p class="fact">Los videojuegos modernos pueden simular iluminación, físicas y mundos enormes en tiempo real.</p></div>
-    <div class="fact-item a14"><span class="badge">🤖 DATO #14</span><p class="fact">La inteligencia artificial puede encontrar patrones en grandes cantidades de datos.</p></div>
-    <div class="fact-item a15"><span class="badge">🔬 DATO #15</span><p class="fact">Muchas de las cosas que usamos diariamente existen gracias a descubrimientos científicos hechos décadas atrás.</p></div>
-  </div>
+<section id="datos" class="card">
+<span class="badge">🔥 ELIGE UN DATO</span>
 
-  <div class="selector">
-    <label for="f1">Dato 1</label><label for="f2">Dato 2</label><label for="f3">Dato 3</label>
-    <label for="f4">Dato 4</label><label for="f5">Dato 5</label><label for="f6">Dato 6</label>
-    <label for="f7">Dato 7</label><label for="f8">Dato 8</label><label for="f9">Dato 9</label>
-    <label for="f10">Dato 10</label><label for="f11">Dato 11</label><label for="f12">Dato 12</label>
-    <label for="f13">Dato 13</label><label for="f14">Dato 14</label><label for="f15">Dato 15</label>
-  </div>
+<input type="radio" name="fact" id="f1" checked><input type="radio" name="fact" id="f2"><input type="radio" name="fact" id="f3"><input type="radio" name="fact" id="f4"><input type="radio" name="fact" id="f5"><input type="radio" name="fact" id="f6"><input type="radio" name="fact" id="f7"><input type="radio" name="fact" id="f8"><input type="radio" name="fact" id="f9"><input type="radio" name="fact" id="f10"><input type="radio" name="fact" id="f11"><input type="radio" name="fact" id="f12"><input type="radio" name="fact" id="f13"><input type="radio" name="fact" id="f14"><input type="radio" name="fact" id="f15"><input type="radio" name="fact" id="f16"><input type="radio" name="fact" id="f17"><input type="radio" name="fact" id="f18"><input type="radio" name="fact" id="f19"><input type="radio" name="fact" id="f20"><input type="radio" name="fact" id="f21"><input type="radio" name="fact" id="f22"><input type="radio" name="fact" id="f23"><input type="radio" name="fact" id="f24"><input type="radio" name="fact" id="f25"><input type="radio" name="fact" id="f26"><input type="radio" name="fact" id="f27"><input type="radio" name="fact" id="f28"><input type="radio" name="fact" id="f29"><input type="radio" name="fact" id="f30">
+
+<div class="facts">
+<div class="fact-item a1"><span class="badge">🌎 CIENCIA</span><p class="fact">La Tierra está ligeramente achatada en los polos.</p></div>
+<div class="fact-item a2"><span class="badge">🌌 ESPACIO</span><p class="fact">La luz del Sol tarda aproximadamente 8 minutos y 20 segundos en llegar a la Tierra.</p></div>
+<div class="fact-item a3"><span class="badge">🐙 ANIMALES</span><p class="fact">Los pulpos tienen tres corazones.</p></div>
+<div class="fact-item a4"><span class="badge">⚡ NATURALEZA</span><p class="fact">Un rayo puede calentar el aire a decenas de miles de grados Celsius.</p></div>
+<div class="fact-item a5"><span class="badge">🌙 ESPACIO</span><p class="fact">La Luna se aleja de la Tierra unos centímetros cada año.</p></div>
+<div class="fact-item a6"><span class="badge">🧊 CIENCIA</span><p class="fact">El hielo flota porque es menos denso que el agua líquida.</p></div>
+<div class="fact-item a7"><span class="badge">🐝 ANIMALES</span><p class="fact">Las abejas pueden aprender a reconocer patrones.</p></div>
+<div class="fact-item a8"><span class="badge">🕷️ NATURALEZA</span><p class="fact">La seda de araña combina ligereza y gran resistencia.</p></div>
+<div class="fact-item a9"><span class="badge">🧠 CUERPO</span><p class="fact">El cerebro necesita un suministro constante de energía para funcionar.</p></div>
+<div class="fact-item a10"><span class="badge">🌳 NATURALEZA</span><p class="fact">Los árboles pueden intercambiar sustancias mediante redes de hongos asociadas a sus raíces.</p></div>
+<div class="fact-item a11"><span class="badge">🚀 ESPACIO</span><p class="fact">Los astronautas en órbita experimentan microgravedad, no ausencia total de gravedad.</p></div>
+<div class="fact-item a12"><span class="badge">🔬 CIENCIA</span><p class="fact">El agua puede existir como sólido, líquido y gas dependiendo de las condiciones.</p></div>
+<div class="fact-item a13"><span class="badge">📱 TECNOLOGÍA</span><p class="fact">Un teléfono moderno tiene sensores capaces de detectar movimiento y orientación.</p></div>
+<div class="fact-item a14"><span class="badge">🤖 IA</span><p class="fact">La inteligencia artificial puede detectar patrones en grandes cantidades de datos.</p></div>
+<div class="fact-item a15"><span class="badge">🎮 GAMING</span><p class="fact">Los videojuegos actuales pueden representar iluminación y físicas en tiempo real.</p></div>
+<div class="fact-item a16"><span class="badge">💻 INTERNET</span><p class="fact">La web y el internet no son exactamente lo mismo: la web es uno de los servicios que funciona sobre internet.</p></div>
+<div class="fact-item a17"><span class="badge">🌍 MUNDO</span><p class="fact">Los continentes se mueven lentamente debido a la tectónica de placas.</p></div>
+<div class="fact-item a18"><span class="badge">☁️ CLIMA</span><p class="fact">Las nubes están formadas por diminutas gotas de agua, cristales de hielo o ambos.</p></div>
+<div class="fact-item a19"><span class="badge">🐋 ANIMALES</span><p class="fact">Las ballenas son mamíferos: respiran aire y alimentan a sus crías con leche.</p></div>
+<div class="fact-item a20"><span class="badge">🌱 PLANTAS</span><p class="fact">Las plantas usan la luz para producir energía química mediante la fotosíntesis.</p></div>
+<div class="fact-item a21"><span class="badge">🔊 FÍSICA</span><p class="fact">El sonido necesita un medio, como aire, agua o un sólido, para propagarse.</p></div>
+<div class="fact-item a22"><span class="badge">☀️ ESPACIO</span><p class="fact">El Sol es una estrella y contiene la mayor parte de la masa del sistema solar.</p></div>
+<div class="fact-item a23"><span class="badge">🧪 QUÍMICA</span><p class="fact">Los átomos están formados por un núcleo y electrones alrededor de él.</p></div>
+<div class="fact-item a24"><span class="badge">🧬 BIOLOGÍA</span><p class="fact">El ADN contiene instrucciones que ayudan a construir y mantener los organismos.</p></div>
+<div class="fact-item a25"><span class="badge">🛰️ TECNOLOGÍA</span><p class="fact">Los satélites necesitan controlar su órbita para mantenerse en la trayectoria prevista.</p></div>
+<div class="fact-item a26"><span class="badge">🎧 TECNOLOGÍA</span><p class="fact">Los audífonos convierten señales eléctricas en vibraciones que producen sonido.</p></div>
+<div class="fact-item a27"><span class="badge">🏎️ FÍSICA</span><p class="fact">La fricción puede convertir parte de la energía del movimiento en calor.</p></div>
+<div class="fact-item a28"><span class="badge">❄️ NATURALEZA</span><p class="fact">La nieve se forma cuando el vapor de agua se congela en la atmósfera.</p></div>
+<div class="fact-item a29"><span class="badge">🧭 TIERRA</span><p class="fact">Una brújula se orienta siguiendo el campo magnético de la Tierra.</p></div>
+<div class="fact-item a30"><span class="badge">⏱️ TIEMPO</span><p class="fact">Los relojes atómicos usan las propiedades de los átomos para medir el tiempo con enorme precisión.</p></div>
 </div>
 
-<div class="card">
-  <span class="badge">❤️ INTERACCIÓN</span>
-  <p>¿Te gustó algún dato?</p>
-  <input type="checkbox" id="like">
-  <label class="like" for="like">❤️ Me gusta</label>
+<div class="selector">
+<label for="f1">1</label><label for="f2">2</label><label for="f3">3</label><label for="f4">4</label><label for="f5">5</label><label for="f6">6</label><label for="f7">7</label><label for="f8">8</label><label for="f9">9</label><label for="f10">10</label><label for="f11">11</label><label for="f12">12</label><label for="f13">13</label><label for="f14">14</label><label for="f15">15</label><label for="f16">16</label><label for="f17">17</label><label for="f18">18</label><label for="f19">19</label><label for="f20">20</label><label for="f21">21</label><label for="f22">22</label><label for="f23">23</label><label for="f24">24</label><label for="f25">25</label><label for="f26">26</label><label for="f27">27</label><label for="f28">28</label><label for="f29">29</label><label for="f30">30</label>
 </div>
+<p class="small">Toca un número para descubrir otro dato.</p>
+</section>
 
-<div class="ad">
-  Espacio reservado para publicidad
+<section id="temas" class="card">
+<span class="badge">📚 TEMAS</span>
+<div class="grid" style="margin-top:18px">
+<div class="topic"><b>🧠 Ciencia</b><span class="small">Experimentos, física y descubrimientos.</span></div>
+<div class="topic"><b>🌌 Espacio</b><span class="small">Planetas, estrellas y universo.</span></div>
+<div class="topic"><b>📱 Tecnología</b><span class="small">Internet, celulares e innovación.</span></div>
+<div class="topic"><b>🎮 Gaming</b><span class="small">Videojuegos y tecnología detrás de ellos.</span></div>
 </div>
+</section>
 
-<footer>
-  WOW — Cosas que no sabías · Sitio creado por Ivan
-</footer>
+<section class="card">
+<span class="badge">❤️ INTERACCIÓN</span>
+<p>¿Te gustó la página?</p>
+<input type="checkbox" id="like">
+<label class="like" for="like">❤️ Me gusta</label>
+</section>
+
+<div class="ad">Espacio reservado para publicidad</div>
+
+<section id="nosotros" class="card">
+<span class="badge">ℹ️ SOBRE WOW</span>
+<p class="small">WOW reúne curiosidades breves para que puedas aprender algo interesante rápidamente. El contenido puede seguir creciendo con nuevos temas y datos.</p>
+</section>
+
+<footer>WOW — Cosas que no sabías · Sitio creado por Ivan</footer>
 </div>
 </body>
 </html>
